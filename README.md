@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/get-free-port.svg)](https://badge.fury.io/js/get-free-port)
+[![npm version](https://badge.fury.io/js/get-clean-port.svg)](https://badge.fury.io/js/get-clean-port)
 
-# GET-FREE-PORT
+# get-clean-port
 
 BEFORE:
 
@@ -27,26 +27,26 @@ AFTER:
 
 ```sh
 # Install GNP in your path
-$ npm install -g get-next-port
+$ npm install -g get-clean-port
 
 # Project 1
-$ next -p `get-free-port proj1` # port A
+$ next -p `get-clean-port proj1` # port A
 
 # Project 2
-$ gatsby develop -p `get-free-port proj2` # port B
+$ gatsby develop -p `get-clean-port proj2` # port B
 
 # Project 3
-$ node expressapp.js -p `npx get-free-port proj3` # Or don't install GNP at all!
+$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install GNP at all!
 
 # A week later, starting a new project...
 # Project 4
-$ ./koaapp.js --port `get-free-port proj4` # port D
+$ ./koaapp.js --port `get-clean-port proj4` # port D
 
 # Close the project... come back to it a few weeks later
-$ ./koaapp.js --port `get-free-port proj4` # port D (same port as before)
+$ ./koaapp.js --port `get-clean-port proj4` # port D (same port as before)
 
 # And in another window, we want to start another dev instance without problems
-$ ./koaapp.js --port `get-free-port proj4` # will run on the next available port
+$ ./koaapp.js --port `get-clean-port proj4` # will run on the next available port
 ```
 
 This tool takes in an identifier (`id`) and spits out a mapped port number.
@@ -74,5 +74,5 @@ $ get-next-port ident
 This tool can also be used via NPX without installing anything:
 
 ```sh
-$ echo `npx get-free-port ident`
+$ echo `npx get-clean-port ident`
 ```
