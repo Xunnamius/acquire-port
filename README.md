@@ -26,7 +26,7 @@ $ ./koaapp.js --port 3006 # guaranteed EADDRINUSE!
 AFTER:
 
 ```sh
-# Install GNP in your path
+# Install GCP in your path
 $ npm install -g get-clean-port
 
 # Project 1
@@ -36,7 +36,7 @@ $ next -p `get-clean-port proj1` # port A
 $ gatsby develop -p `get-clean-port proj2` # port B
 
 # Project 3
-$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install GNP at all!
+$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install GCP at all!
 
 # A week later, starting a new project...
 # Project 4
