@@ -1,6 +1,6 @@
 {
   "name": "get-clean-port",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Generate consistent taggable guaranteed-to-be-free port numbers for your dev servers without having to remember them!",
   "repository": {
     "type": "git",
@@ -11,6 +11,10 @@
   "license": "ISC",
   "scripts": {
     "pp": "publish-please"
+  },
+  "bin": {
+    "get-clean-port": "./get-clean-port.js",
+    "gcp": "./get-clean-port.js"
   },
   "keywords": [
     "free",

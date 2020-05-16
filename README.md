@@ -26,27 +26,27 @@ $ ./koaapp.js --port 3006 # guaranteed EADDRINUSE!
 AFTER:
 
 ```sh
-# Install GCP in your path
+# Install gcp in your path
 $ npm install -g get-clean-port
 
 # Project 1
 $ next -p `get-clean-port proj1` # port A
 
 # Project 2
-$ gatsby develop -p `get-clean-port proj2` # port B
+$ gatsby develop -p `gcp proj2` # port B (`gcp` is synonymous w/ get-clean-port)
 
 # Project 3
-$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install GCP at all!
+$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install gcp at all
 
 # A week later, starting a new project...
 # Project 4
-$ ./koaapp.js --port `get-clean-port proj4` # port D
+$ ./koaapp.js --port `gcp proj4` # port D
 
 # Close the project... come back to it a few weeks later
-$ ./koaapp.js --port `get-clean-port proj4` # port D (same port as before)
+$ ./koaapp.js --port `gcp proj4` # port D (same port as before)
 
 # And in another window, we want to start another dev instance without problems
-$ ./koaapp.js --port `get-clean-port proj4` # will run on the next available port
+$ ./koaapp.js --port `gcp proj4` # will run on the next available port
 ```
 
 This tool takes in an identifier (`id`) and spits out a mapped port number.
@@ -69,6 +69,7 @@ flexibility of temporary port assignments.
 ```sh
 $ npm install -g get-clean-port
 $ get-clean-port ident
+$ gcp ident
 ```
 
 This tool can also be used via NPX without installing anything:

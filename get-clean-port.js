@@ -17,7 +17,6 @@ const PORTMAP_PATH = `${os.homedir()}/.config/_portmap.json`;
     if(process.argv.length != 3) {
         console.log(`${basename(__filename)} <id>`);
         process.exit(1);
-        throw new Error();
     }
 
     try {
