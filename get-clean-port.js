@@ -14,10 +14,13 @@ const PORTMAP_PATH = `${os.homedir()}/.config/_portmap.json`;
 (async () => {
     let portmap = null;
 
-    if(process.argv.length != 3) {
-        console.log(`${basename(__filename)} <id>`);
+    if(![2, 3].includes(process.argv.length)) {
+        console.log(`usage: ${basename(__filename)} [identifier]`);
         process.exit(1);
     }
+
+    if(process.argv.length != 3)
+        process.argv[2] = basename(process.cwd());
 
     try {
         portmap = await json.readFile(PORTMAP_PATH);
@@ -46,6 +49,6 @@ const PORTMAP_PATH = `${os.homedir()}/.config/_portmap.json`;
 
     catch(error) {
         console.log(`FATAL ERROR: ${error}`);
-        process.exit(1);
+        process.exit(2);
     }
 })();

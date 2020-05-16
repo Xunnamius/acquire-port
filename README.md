@@ -2,7 +2,7 @@
 
 # get-clean-port
 
-BEFORE:
+BEFORE get-clean-port:
 
 ```sh
 # Project 1
@@ -23,7 +23,7 @@ $ ./koaapp.js --port 3006 # oops!
 $ ./koaapp.js --port 3006 # guaranteed EADDRINUSE!
 ```
 
-AFTER:
+AFTER get-clean-port:
 
 ```sh
 # Install gcp in your path
@@ -47,6 +47,11 @@ $ ./koaapp.js --port `gcp proj4` # port D (same port as before)
 
 # And in another window, we want to start another dev instance without problems
 $ ./koaapp.js --port `gcp proj4` # will run on the next available port
+
+# You don't even need an id. Call gcp by itself and it'll use the directory name
+# as the id automatically. Easy peasy!
+$ cd ~/repos/freelance/shiny-new-react-app
+$ npm run dev -p `gcp` # same as: $ npm run dev -p `gcp shiny-new-react-app`
 ```
 
 This tool takes in an identifier (`id`) and spits out a mapped port number.
