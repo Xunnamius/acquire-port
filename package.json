@@ -1,0 +1,35 @@
+{
+  "name": "get-free-port",
+  "version": "0.2.0",
+  "description": "Generate consistent taggable guaranteed-to-be-free port numbers for your dev servers without having to remember them!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xunnamius/get-free-port"
+  },
+  "main": "index.js",
+  "author": "Xunnamius",
+  "license": "ISC",
+  "scripts": {
+    "pp": "publish-please"
+  },
+  "keywords": [
+    "free",
+    "port",
+    "development",
+    "dev",
+    "server",
+    "monotonic",
+    "number",
+    "generator",
+    "unique",
+    "detect"
+  ],
+  "devDependencies": {
+    "publish-please": "^5.5.1"
+  },
+  "dependencies": {
+    "basename": "0.1.2",
+    "detect-port": "^1.3.0",
+    "jsonfile": "6.0.1"
+  }
+}
