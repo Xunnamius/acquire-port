@@ -67,8 +67,8 @@ flexibility of temporary port assignments.
 ## Installation and Usage
 
 ```sh
-$ npm install -g get-next-port
-$ get-next-port ident
+$ npm install -g get-clean-port
+$ get-clean-port ident
 ```
 
 This tool can also be used via NPX without installing anything:
