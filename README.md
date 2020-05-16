@@ -36,17 +36,17 @@ $ next -p `get-clean-port proj1` # port A
 $ gatsby develop -p `gcp proj2` # port B (`gcp` is synonymous w/ get-clean-port)
 
 # Project 3
-$ node expressapp.js -p `npx get-clean-port proj3` # Or don't install gcp at all
+$ node expressapp.js -p `npx -q get-clean-port p3` # Or don't install gcp at all
 
 # A week later, starting a new project...
 # Project 4
-$ ./koaapp.js --port `gcp proj4` # port D
+$ ./koaapp.js --port `gcp project-4` # port D
 
 # Close the project... come back to it a few weeks later
-$ ./koaapp.js --port `gcp proj4` # port D (same port as before)
+$ ./koaapp.js --port `gcp project-4` # port D (same port as before)
 
 # And in another window, we want to start another dev instance without problems
-$ ./koaapp.js --port `gcp proj4` # will run on the next available port
+$ ./koaapp.js --port `gcp project-4` # will run on the next available port
 
 # You don't even need an id. Call gcp by itself and it'll use the directory name
 # as the id automatically. Easy peasy!
@@ -67,7 +67,28 @@ Port numbers start at 3000. You can change/delete your port mappings in the
 
 This is useful if, like me, you're running any dozen dev servers off the same
 rig and like to have consistent port numbers for your projects with the added
-flexibility of temporary port assignments.
+flexibility of temporary port assignments. I use it in my `package.json` scripts
+like so:
+
+```json
+{
+    ...
+    "scripts": {
+        "dev": "next -p `get-clean-port`"
+    }
+}
+```
+
+Or with NPX:
+
+```json
+{
+    ...
+    "scripts": {
+        "dev": "next -p `npx -q get-clean-port`"
+    }
+}
+```
 
 ## Installation and Usage
 
