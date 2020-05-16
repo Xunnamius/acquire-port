@@ -33,10 +33,11 @@ const PORTMAP_PATH = `${os.homedir()}/.config/_portmap.json`;
 
         const id = process.argv[2];
         const idExists = id in portmap.ports;
-        const port = await detect(idExists ? portmap.ports[id] : portmap.nextPort++);
+        const port = await detect(idExists ? portmap.ports[id] : portmap.nextPort);
 
         if(!idExists) {
             portmap.ports[id] = port;
+            portmap.nextPort = port + 1;
             await json.writeFile(PORTMAP_PATH, portmap);
         }
 
