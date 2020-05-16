@@ -42,6 +42,9 @@ $ node expressapp.js -p `npx get-free-port proj3` # Or don't install GNP at all!
 # Project 4
 $ ./koaapp.js --port `get-free-port proj4` # port D
 
+# Close the project... come back to it a few weeks later
+$ ./koaapp.js --port `get-free-port proj4` # port D (same port as before)
+
 # And in another window, we want to start another dev instance without problems
 $ ./koaapp.js --port `get-free-port proj4` # will run on the next available port
 ```
@@ -64,8 +67,8 @@ flexibility of temporary port assignments.
 ## Installation and Usage
 
 ```sh
-npm install -g get-next-port
-get-next-port ident
+$ npm install -g get-next-port
+$ get-next-port ident
 ```
 
 This tool can also be used via NPX without installing anything:
