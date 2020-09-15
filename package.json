@@ -11,7 +11,7 @@
   "license": "ISC",
   "scripts": {
     "pp": "publish-please",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": ":; test -e ./package-lock.json && npx npm-force-resolutions"
   },
   "bin": {
     "acquire-port": "./acquire-port.js",
