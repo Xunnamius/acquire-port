@@ -14,15 +14,16 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "bin": {
-    "get-clean-port": "./get-clean-port.js",
-    "gcp": "./get-clean-port.js"
+    "acquire-port": "./acquire-port.js",
+    "ap": "./acquire-port.js"
   },
   "keywords": [
     "free",
     "port",
     "detect",
     "unique",
-    "clean",
+    "get",
+    "acquire",
     "dev",
     "server",
     "development",
