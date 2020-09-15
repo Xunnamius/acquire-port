@@ -1,10 +1,10 @@
 {
-  "name": "get-clean-port",
-  "version": "0.3.3",
+  "name": "get-free-port",
+  "version": "0.3.4",
   "description": "Generate consistent taggable guaranteed-to-be-free port numbers for your dev servers without having to remember them!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Xunnamius/get-clean-port"
+    "url": "https://github.com/Xunnamius/get-free-port"
   },
   "main": "index.js",
   "author": "Xunnamius",

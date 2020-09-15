@@ -1,4 +1,5 @@
-[![npm version](https://badge.fury.io/js/get-clean-port.svg)](https://badge.fury.io/js/get-clean-port)
+[![npm
+version](https://badge.fury.io/js/get-clean-port.svg)](https://badge.fury.io/js/get-clean-port)
 
 # get-clean-port
 
@@ -69,8 +70,7 @@ choose the next starting port in the `_portmap.json` configuration file found at
 This is useful if, like me, you're running any dozen dev servers off the same
 rig and like to have consistent port numbers for your projects with the added
 flexibility of temporary port assignments when necessary. I use it in my
-`package.json` files, composer scripts, shell scripts, and other places like
-so:
+`package.json` files, composer scripts, shell scripts, and other places like so:
 
 ```json
 {
@@ -81,8 +81,8 @@ so:
 }
 ```
 
-Or with NPX, so users who don't have get-clean-port installed globally can
-still call `npm run dev` without an issue:
+Or with NPX, so users who don't have get-clean-port installed globally can still
+call `npm run dev` without an issue:
 
 ```json
 {
