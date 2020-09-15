@@ -1,6 +1,6 @@
 {
   "name": "acquire-port",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Acquire a consistent guaranteed-to-be-free port number for your dev server or whatever else, no memorizing required!",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "license": "ISC",
   "scripts": {
     "pp": "publish-please",
-    "preinstall": ":; test -e ./package-lock.json && npx npm-force-resolutions"
+    "preinstall": ":; test -e ./package-lock.json && npx npm-force-resolutions || true"
   },
   "bin": {
     "acquire-port": "./acquire-port.js",
