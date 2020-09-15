@@ -1,10 +1,10 @@
 {
-  "name": "get-free-port",
-  "version": "0.3.5",
-  "description": "Generate consistent taggable guaranteed-to-be-free port numbers for your dev servers without having to remember them!",
+  "name": "acquire-port",
+  "version": "0.3.6",
+  "description": "Acquire a consistent guaranteed-to-be-free port number for your dev server or whatever else, no memorizing required!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Xunnamius/get-free-port"
+    "url": "https://github.com/Xunnamius/acquire-port"
   },
   "main": "index.js",
   "author": "Xunnamius",
