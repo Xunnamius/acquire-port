@@ -1,6 +1,6 @@
 {
   "name": "acquire-port",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Acquire a consistent guaranteed-to-be-free port number for your dev server or whatever else, no memorizing required!",
   "keywords": [
     "free",
