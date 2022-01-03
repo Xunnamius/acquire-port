@@ -2,17 +2,6 @@
   "name": "acquire-port",
   "version": "0.3.12",
   "description": "Acquire a consistent guaranteed-to-be-free port number for your dev server or whatever else, no memorizing required!",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Xunnamius/acquire-port"
-  },
-  "main": "index.js",
-  "author": "Xunnamius",
-  "license": "ISC",
-  "bin": {
-    "acquire-port": "./acquire-port.js",
-    "ap": "./acquire-port.js"
-  },
   "keywords": [
     "free",
     "port",
@@ -27,6 +16,17 @@
     "number",
     "monotonic"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xunnamius/acquire-port"
+  },
+  "license": "MIT",
+  "author": "Xunnamius",
+  "main": "index.js",
+  "bin": {
+    "acquire-port": "./acquire-port.js",
+    "ap": "./acquire-port.js"
+  },
   "dependencies": {
     "basename": "0.1.2",
     "detect-port": "^1.3.0",
